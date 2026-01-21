@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Kayla's Portfolio
+        </title>
+        <link rel="stylesheet" href="Digital_Identity.css"> 
+    </head>
+    <body>
+        <!--Header section-->
+        <header>
+            <h1>Kayla</h1>
+            <nav>
+                <ul>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#contact">Contacts</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!--About Me section-->
+        <section id="About">
+            <h2>About Me</h2>
+            <img src="profilepicture.jpg" alt="My Profile picture" width="200">
+            <p>
+                Computer science was never my initial passion, but over time I discovered my potential to thrive in the field. 
+                I began by exploring Python and building small projects, gradually realizing that each step was preparing me 
+                for more complex challenges. With guidance from friends and mentors, I found inspiration in web development 
+                through HTML, CSS, and JavaScript, often starting with the basics using the Mimo app. Along the way, I learned 
+                that true mastery comes from consistent practice and familiarity with foundational code, and this mindset 
+                continues to drive my growth as a developer.
+            </p>
+
+        </section>
+        <!--Technical skills section-->
+        <section id="Skills">
+            <h2>Technical skills</h2>
+            <ul>
+                <li>Python</li>
+                <li>Advanced Python</li>
+                <li>Java</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Pygame</li>
+                <li>Django</li>
+            </ul>
+
+            <p>
+                My favourite so far has been working with object-oriented programming, building interactive systems with event-driven loops, and applying collision detection to create responsive experiences. These ideas taught me how different parts of a program can work together seamlessly while still being modular and reusable.
+            </p>
+        </section>
+        <!--Academic Projects section-->
+        <section id="Projects">
+            <h2>Projects</h2>
+            <article class="project">
+                <h3 class="projectname">Alien Invasion Game</h3>
+                <p class="project-source">Python Crash Couse Projects</p>
+                <p class="description">
+                    Built a classic arcade-style alien invasion game using Python and Pygame. Practiced object-oriented programming, collision detection, and game loops.
+                </p>
+                <h4 class="tools-title">tools used</h4>
+                <div class="tools-used">
+                    <P>Python</P>
+                    <p>Pygame</p>
+                    <P>OOP</P>
+                    <p>Development</p>
+                </div>
+            </article>
+            <article class="project">
+                <h3 class="projectname">Learning Log</h3>
+                <p class="project-source">Python Crash Couse Projects</p>
+                <p class="description">
+                    Developed a web application to track personal learning topics and progress. 
+                    Practiced Django fundamentals including models, views, templates, and user authentication.
+                </p>
+                <h4 class="tools-title">tools used</h4>
+                <div class="tools-used">
+                    <P>Python</P>
+                    <p>Django</p>
+                    <p>HTML</p>
+                    <P>CSS</P>
+                    <p>Bootstrap</p>
+                </div>
+            </article>
+        </section>
+        <!--Contact form section-->
+        <section id="contact">
+            <p>Contact me</p>
+            <form> 
+                <div class="input-group"> 
+                    <input type="text" id="username" required> 
+                    <label for="username">Name</label> 
+                </div> 
+                <div class="input-group"> 
+                    <input type="email" id="email" required> 
+                    <label for="email">Email</label> 
+                </div> 
+                <div class="input-group"> 
+                    <textarea id="message" required></textarea> 
+                    <label for="message">Tell me a little about what you need</label> 
+                </div> 
+
+                <button>Send</button> 
+            </form>
+        </section>
+    </body>
+</html>

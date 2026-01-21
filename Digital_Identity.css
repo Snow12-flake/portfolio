@@ -1,0 +1,194 @@
+body {
+  background-color: #C0BEB9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2A2420;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 20px;
+}
+nav li a {
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+}
+nav li a::after { 
+  content: ""; 
+  position: absolute; 
+  width: 0; height: 2px; 
+  bottom: -4px; left: 0; 
+  background-color: #9EC9FF; 
+  transition: width 0.3s ease; 
+} 
+nav li a:hover::after { 
+  width: 100%; 
+}
+section {
+  background-color: #ACAB9E;
+  border-radius: 12px;
+  padding: 40px 30px;
+  margin: 40px auto;
+  max-width: 900px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+section:hover {
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  transform: translateY(-5px);
+}
+section p {
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+h1, h2, h3 {
+  color: #896A58;
+}
+a {
+  color: #567257;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  color: #2A2420;
+} 
+#About {
+  color: #2A2420;
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #ACAB9E, #896A58);
+}
+#About img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 10px auto;
+}
+#Skills{
+    background: linear-gradient(135deg, #F5D7C4, #ACAB9E);
+}
+.project {
+  background: linear-gradient(135deg, #4F4F51, #5A5A5C);
+  color: #D9D8D5;   
+  border: 1px solid #3A3A3A;   
+  border-radius: 10px;          
+  padding: 20px;               
+  margin: 20px;           
+  max-width: 400px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);  
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; 
+  flex: 1 1 280px;   
+}
+#Projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  background: linear-gradient(135deg, #4F4F51, #ACAB9E);
+}
+.project:hover { 
+  transform: translateY(-5px); 
+  box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+  background: linear-gradient(135deg, #5A5A5C, #6C6C6E);
+}
+form { 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  gap: 12px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+#contact {
+  background: linear-gradient(135deg, #ACAB9E, #4F4F51);
+  color: #F5F5F5;
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 12px;
+}
+.input-group {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+.input-group input,
+.input-group textarea {
+  width: 100%; 
+  padding: 12px; 
+  border-radius: 8px; 
+  border: none; 
+  background-color: #3A3A3A; 
+  color: #F5F5F5; 
+  font-size: 1em; 
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2); 
+}
+.input-group input:focus,
+.input-group textarea:focus { 
+  outline: none; 
+  border: 1px solid #9EC9FF;
+  box-shadow: 0 0 6px rgba(158, 201, 255, 0.6); 
+}
+.input-group label {
+  position: absolute;
+  top: 14px;
+  left: 12px;
+  color: #B0B0B0;
+  font-size: 0.95em;
+  pointer-events: none;
+  transition: all 0.2s ease;
+}
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label,
+.input-group textarea:focus + label,
+.input-group textarea:not(:placeholder-shown) + label 
+{
+  top: -8px;
+  left: 10px;
+  font-size: 0.75em;
+  background-color: #F5D7C4;
+  padding: 0 4px;
+  border-radius: 4px;
+  color: #2A2420;
+}
+button {
+  background-color: #F58F7C;
+  color: #FFFFFF;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: #F2C4CE;
+  color: #2A2420;
+}
+section, .project {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeInUp 1s ease forwards;
+}
+.project:nth-child(1) { animation-delay: 0.2s; } 
+.project:nth-child(2) { animation-delay: 0.4s; } 
+.project:nth-child(3) { animation-delay: 0.6s; } 
+
+@keyframes fadeInUp { 
+  to { 
+    opacity: 1; 
+    transform: translateY(0); 
+  } 
+}
